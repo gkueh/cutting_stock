@@ -22,7 +22,8 @@ def cutting_stock():
 	# Higher the number, computation time increases exponentially
 	def all_subsets(ss): # 2^len(ss) -1 number of combinations
 		return chain(*map(lambda x: combinations(ss, x), range(0, 7)))
-
+	
+	# via LTGIV
 	# Returns bool  based on if combination exists for remaining cuts
 	def exactSubset( listLarge, listSubset ):
 
